@@ -1,2 +1,3 @@
 # Praktikum-Algoritma-dan-Pemprograman
-Wadah mata kuliah praktikum algoritma dan pemprograman
+
+*[Kelas F] - Reski Firmansyah (1217050119)
