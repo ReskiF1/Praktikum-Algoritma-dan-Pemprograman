@@ -10,14 +10,11 @@ using namespace std;
 #define KEY_RIGHT 77
 #define ESC_KEY 27
 
-void delay(clock_t a)
-{
+void delay(clock_t a){
     clock_t start;
     start  = clock();
-    while(clock()-start<a)
-    {
-
-    }
+    while(clock() - start < a){
+	}
 }
 
 void pembukaan(){
@@ -51,7 +48,7 @@ void pembukaan(){
 void ceramah(){
 	
 	int i;
-	char crmh[1000] = "Saskeh, kau tidak tahu betapa orang-orang di desa sangat kecewa akan kepergianmu. Kekaseh-sensei, sakura, dan semua ninja merasa kehilangan bila kau pergi. Jadi tolonglah, jangan pernah pergi meninggalkan desa! kau tidak tahu betapa sakitnya rasa kehilangan itu.";
+	char crmh[1000] = "Saskeh, kau tidak tahu betapa orang-orang di desa sangat kecewa akan kepergianmu. Kekaseh-sensei, sakiri, dan semua ninja merasa kehilangan bila kau pergi. Jadi tolonglah, jangan pernah pergi meninggalkan desa! kau tidak tahu betapa sakitnya rasa kehilangan itu.";
     for(i = 0; i < 10; i++){
         cout << "\n";
     }
@@ -169,31 +166,11 @@ int main(){
 		system("CLS");
 		
 		if (hitOrspeech == 1) {
+			for (int i = 0; i < 9; i++){
 			k1.attack(&k2);		//1
 			cout << "\n";
 			k2.attack(&k1);
-			k1.attack(&k2);		//2
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//3
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//4
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//5
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//6
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//7
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//8
-			cout << "\n";
-			k2.attack(&k1);
-			k1.attack(&k2);		//9
+			}
 		
 			if (k2.hp == 0){
 				cout << "\nNartoh: Saskeh sudah pingsan, sebaiknya cepat aku bawa ke desa!\n";
